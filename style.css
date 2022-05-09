@@ -1,0 +1,29 @@
+/* General */
+body{
+    display: flex;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+html{
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Classes */
+.sidebar{
+    background-image: url('img/sidebar-picture.jpg');
+    font-family: 'Koulen', cursive;
+}
+
+/* Ids */
+#form-container{
+    --gap: 2rem;
+    display: flex;
+    gap: 4rem;
+}

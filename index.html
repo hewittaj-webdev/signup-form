@@ -5,12 +5,61 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto&display=swap" rel="stylesheet">
         <script src="script.js" defer></script>
         <title>Signup-Form</title>
     </head>
 
     <body>
-
+        <div class="sidebar">
+            <h1>ODIN SIGNUP</h1>
+        </div>
         
+        <div id="signup">
+            <div id="intro">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Signup <em>now</em> to get started.</p>
+                <br>
+                <p>You know you want to.</p>
+            </div>
+
+            <div id="signup-area">
+                <h2>Let's do this!</h2>
+                <div id="form-container">
+                    <form action="#" method="POST">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <br>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                    </form>
+
+                    
+                    <form action="#" method="POST">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                        <br>
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+                        <br>
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="text" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer">
+                <button id="btn-create-account">Create Account</button>
+                <div>
+                    <p>Already have an account?</p>
+                    <button id="btn-log-in">Log in</button>
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
