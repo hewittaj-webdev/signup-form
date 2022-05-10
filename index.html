@@ -14,14 +14,16 @@
 
     <body>
         <div class="sidebar">
-            <h1>ODIN SIGNUP</h1>
+            <h1 id="sidebar-heading">ODIN SIGNUP</h1>
+            <footer id="sidebar-footer">
+                Photo by <a href="https://unsplash.com/@kellysikkema">Kelley Sikkema</a> on <a href="https://unsplash.com/photos/Oz_J_FXKvIs">Unsplash</a>
+            </footer>
         </div>
         
         <div id="signup">
             <div id="intro">
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Signup <em>now</em> to get started.</p>
-                <br>
-                <p>You know you want to.</p>
+                <p>You <em>know</em> you want to.</p>
             </div>
 
             <div id="signup-area">
@@ -29,34 +31,33 @@
                 <div id="form-container">
                     <form action="#" method="POST">
                         <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                        <input type="text" name="firstName" id="firstName">
                         <br>
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="email" name="email" id="email">
                         <br>
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Password">
+                        <input type="password" name="password" id="password">
                     </form>
 
                     
                     <form action="#" method="POST">
                         <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                        <input type="text" name="lastName" id="lastName">
                         <br>
                         <label for="phoneNumber">Phone Number</label>
-                        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+                        <input type="text" name="phoneNumber" id="phoneNumber">
                         <br>
                         <label for="confirmPassword">Confirm Password</label>
-                        <input type="text" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+                        <input type="text" name="confirmPassword" id="confirmPassword">
                     </form>
                 </div>
             </div>
 
-            <div class="footer">
+            <div id="signup-footer">
                 <button id="btn-create-account">Create Account</button>
-                <div>
-                    <p>Already have an account?</p>
-                    <button id="btn-log-in">Log in</button>
+                <div id="signup-footer-last">
+                    <p>Already have an account? <a href="#" id="login-link">Log in</a></p>
                 </div>
             </div>
         </div>

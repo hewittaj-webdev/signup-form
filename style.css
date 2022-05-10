@@ -1,6 +1,12 @@
 /* General */
+a:visited{
+    color: #000;
+}
+
 body{
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 form{
@@ -9,21 +15,119 @@ form{
 }
 
 html{
-    border: 0;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+
+}
+
+input:focus{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .15);
+    outline-color: blue;
+    outline-style: solid;
+    outline-width: .1px;
+}
+
+input{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 1.4rem;
+    width: 15rem;
+}
+
+label{
+    color: rgb(112, 108, 108);
+    font-weight: 600;
 }
 
 /* Classes */
 .sidebar{
+    align-items: center;
     background-image: url('img/sidebar-picture.jpg');
-    font-family: 'Koulen', cursive;
+    background-position: 1600px 12000px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 40vw;
 }
 
 /* Ids */
+#btn-create-account{
+    background-color: #426339;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 3rem;
+    margin-top: 1rem;
+    width: 15rem;
+}
+
 #form-container{
-    --gap: 2rem;
     display: flex;
     gap: 4rem;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    font-weight: 800;
+    max-height: 20vh;
+    min-height: 200px;
+    min-width: 30rem;
+    padding-left: 2rem;
+    padding-top: 20rem;
+    padding-bottom: 3rem;
+}
+
+#login-link{
+    color: rgb(197, 129, 4);
+    text-decoration: none;
+}
+
+#sidebar-footer{
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+#sidebar-heading{
+    background-blend-mode: overlay;
+    background-color: rgba(10, 10, 10, .3);
+    font-family: 'Koulen', cursive;
+    font-size: 4rem;
+    margin-top: 40vh;
+    text-align: center;
+    width: 100%;   
+}
+
+#signup{
+    background-color: rgba(243, 242, 242, 0.336);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 60vw;
+}
+
+#signup-area{
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, .15), 0 .1px 5px -2px rgba(0, 0, 0, .15);
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+
+}
+
+#signup-area h2{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#signup-footer{
+    padding-left: 2rem;
+}
+
+#signup-footer-last{
+    font-size: larger;
+    font-weight: 600;
 }
